@@ -18,7 +18,8 @@ A list
 ch22
 }
 \description{
-A dataset containing  1103547 importance values, and a table of variables used in splits
+A dataset containing  1103547 importance values, and a table of variables used in splits.
+Note that the importances have not been logged.
 }
 \examples{
 \dontrun{
@@ -27,7 +28,6 @@ system.time(fit.ranger.7 <- ranger(dependent.variable.name= "V1", data = aa2,
                                 importance = "impurity",
                                  num.threads=20,num.trees = 100000,
                                  seed=123))
-}
 #Ranger result
 #Call:
 #ranger(dependent.variable.name = "V1", data = aa2, importance = "impurity", 
@@ -41,5 +41,9 @@ system.time(fit.ranger.7 <- ranger(dependent.variable.name= "V1", data = aa2,
 #Variable importance mode:         impurity 
 #Splitrule:                        gini 
 #OOB prediction error:             4.27 \%
+C <-count_variables(fit.ranger.7)
+imp<-rf1$variable.importance
+}
+
 }
 \keyword{datasets}

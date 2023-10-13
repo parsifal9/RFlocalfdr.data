@@ -1,15 +1,18 @@
 Package: RFlocalfdr.data
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Data for the Vignette and Examples in RFlocalfdr’
+Version: 0.0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+        person(given = "Robert",
+           family = "Dunne",
+           role = c("aut", "cre"),
+           email = "rob.dunne@csiro.au",
+           comment = c(ORCID = "https://orcid.org/0000-0003-1946-7279"))
+Description: Data for the vignette and examples. Contains  a dataset of 1103547 importance values, and the table of variables used in the random forest splits. The data is Chromosome 22 taken from "A Global Reference for Human Genetic Variation" Auton et al., Nature, 2015. It also contains a 51 samples  by  22283 genes data set taken from Spira et al (2004),  "Gene Expression Profiling of Human Lung Tissue from Smokers with Severe Emphysema".
+License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
+LazyDataCompression: xz
 LazyData: true
